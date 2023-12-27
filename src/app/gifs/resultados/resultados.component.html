@@ -1,0 +1,19 @@
+<!-- <ul>
+    <li *ngFor="let imag of resultado">
+        hoola
+    </li>
+</ul> -->
+
+<div class="row">   
+    <div *ngFor="let term of resultado"
+         class="col-md-4 col-sm-6 animate__animated animate__fadeIn animate__faster">
+        <div class="card">
+            <img [src]="term.images.downsized_medium.url"
+                 alt="term.title"
+                 class="card-img-top">
+            <div class="card-body">
+                <p class="card-text">{{term.title}}</p>
+            </div>
+        </div>
+    </div>
+</div>
